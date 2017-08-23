@@ -1,5 +1,6 @@
 package com.alomsoftware.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -10,7 +11,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity(name="t_tasks")
-public class Task {
+public class Task implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -23,6 +24,10 @@ public class Task {
 	
 	
 	
+	public Task() {
+		 
+	}
+
 	public Task(String name, String description, Date dateCreated, boolean finished) {
 		super();
 		this.name = name;
