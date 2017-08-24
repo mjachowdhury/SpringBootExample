@@ -21,7 +21,7 @@ public class SampleRestController {
 		return "As salamu Alykum";
 	}
 
-	@GetMapping("/all-tasks")
+	/*@GetMapping("/all-tasks")
 	public String allTask(){
 		return taskService.findAll().toString();
 	}
@@ -37,5 +37,5 @@ public class SampleRestController {
 	public String deleteTask(@RequestParam  int id){
 		taskService.delete(id); 
 		return "Task-deleted";		
-	}
+	}*/
 }
