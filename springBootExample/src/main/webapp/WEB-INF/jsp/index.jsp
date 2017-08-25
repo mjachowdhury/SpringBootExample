@@ -7,11 +7,11 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
  <html>
-<head>
+ <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-US-Compatible" content="IE-edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<meta http-equiv="Progmo" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta http-equiv="Exppires" content="Sat, 01,Dec 2017 00:00:00 GMT">
 	
@@ -34,13 +34,14 @@
 <body>	 
 	<nav role="navigation" class="navbar navbar-inverse">
 		<div class="">
-			<a href="http://www.alomsoftwares.com" class="navbar-brand">AlomSoftware's</a>
-		</div>
-		<div class="navbar-collapse">
+			<a href="/" class="navbar-brand">AlomSoftware's</a>
+		
+		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="new-task">New Task</a></li>
 				<li><a href="all-tasks">All Tasks</a></li>	
 			</ul>
+		</div>
 		</div>
 	</nav> 
 
@@ -64,7 +65,7 @@
 	 		</div>
 	 	</c:when>
 	 	<c:when test="${mode == 'MODE_TASKS'}">
-			 <div class="container text-center" id="taskDiv">
+			 <div class="container text-center" id="tasksDiv">
 			 	 <h3>My Tasks</h3>
 			 	 <br>
 			 	 <div class="table-responsive">
